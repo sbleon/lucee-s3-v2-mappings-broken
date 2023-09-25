@@ -1,6 +1,6 @@
 This repro demonstrates how the Lucee S3 extension v2 breaks s3 mappings.
 
-To run it:
+To run it, clone the repo, `cd` to it, then:
 
 `docker run -p 8080:8080 -v ".:/app" ortussolutions/commandbox:lucee5-3.8.0`
 

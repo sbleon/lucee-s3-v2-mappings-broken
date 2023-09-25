@@ -2,14 +2,12 @@ This repro demonstrates how the Lucee S3 extension v2 breaks s3 mappings.
 
 To run it, clone the repo, `cd` to it, then:
 
-`docker run -p 8888:8888 -v ".:/var/www" lucee/lucee:5.4.1.8`
+1. Edit s3config.json to have working credentials
+2. Run the app: `docker run -p 8888:8888 -v ".:/var/www" lucee/lucee:5.4.1.8`
+3. Visit http://localhost:8080
 
-(or with commandbox:
+--
 
-`docker run -p 8888:8888 -v ".:/app" -e PORT=8888 ortussolutions/commandbox:lucee5-3.8.0`)
-
-Then open http://localhost:8080
-
-(No, I'm not using a valid S3 bucket, but it does not make a difference if I do,
-and it's easier to share a repro without asking people to configure it with
-valid S3 credentials.)
+These mappings used to work correctly with version 0.9 of the extension.
+You can verify that by running the following instead of step 2 above.
+`docker run -p 8888:8888 -v ".:/var/www" lucee/lucee:5.3.9.133`

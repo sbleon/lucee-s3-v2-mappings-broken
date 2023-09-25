@@ -1,7 +1,7 @@
 <cfif ExpandPath('/approot') contains 'approot'>
-  <span style="color:red">Mappings are broken</span>
+  <h2 style="color:red">Mappings are broken</h2>
 <cfelse>
-  <span style="color:green">Mappings are working</span>
+  <h2 style="color:green">Mappings are working</h2>
 </cfif>
 
 <p>

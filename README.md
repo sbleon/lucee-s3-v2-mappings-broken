@@ -4,7 +4,7 @@ To run it, clone the repo, `cd` to it, then:
 
 1. Edit s3config.json to have working credentials
 2. Run the app: `docker run -p 8888:8888 -v ".:/var/www" lucee/lucee:5.4.1.8`
-3. Visit http://localhost:8080
+3. Visit http://localhost:8888
 
 --
 

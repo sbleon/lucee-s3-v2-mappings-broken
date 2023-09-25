@@ -1,4 +1,4 @@
-This repro demonstrates how the Lucee S3 extension v2 breaks s3 mappings.
+This repro demonstrates how the Lucee S3 extension v2 breaks non-S3 mappings.
 
 To run it, clone the repo, `cd` to it, then:
 
